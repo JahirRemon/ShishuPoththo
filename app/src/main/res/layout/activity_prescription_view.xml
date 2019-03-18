@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PrescriptionViewActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/colorTitleColor"/>
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorWhite"
+        >
+
+        <TextView
+            android:id="@+id/presNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient Name: Remon"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTitleColor"
+            />
+
+        <TextView
+            android:id="@+id/presAgeTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient Age: 2 Years 2 month"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="@color/colorTitleColor"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rx,"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorTitleColor"
+
+            />
+
+        <ListView
+            android:id="@+id/presDrugsLV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient Age: 2 Years 2 month"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            />
+
+        <ImageView
+            android:id="@+id/showImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weight"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/completeBTN"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_bg_sgape"
+        android:gravity="center"
+        android:text="Take Screen Short"
+        android:onClick="takeScreenShort"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTitleColor"
+        android:textSize="18sp"/>
+</RelativeLayout>

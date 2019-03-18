@@ -1,0 +1,370 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.example.mdjahirulislam.shishupoththo.Fragment.BabyDragCalculationFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_left_margin"
+                android:layout_marginRight="@dimen/activity_right_margin"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/drag_tabLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_bg_shape">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="7dp"
+                            android:src="@drawable/pills"/>
+
+                        <TextView
+                            android:id="@+id/tabText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center|left"
+                            android:inputType="textEmailAddress"
+                            android:text="Tab"
+                            android:textColor="@color/colorTitleColor"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/drag_capsuleLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_bg_shape"
+                        android:clickable="true">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:src="@drawable/two_pills"/>
+
+                        <TextView
+
+                            android:id="@+id/capsuleText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/transparent"
+                            android:clickable="true"
+                            android:duplicateParentState="true"
+                            android:gravity="center|left"
+                            android:inputType="textEmailAddress"
+                            android:text="Capsule"
+                            android:textColor="@color/colorTitleColor"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/drag_syrup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_bg_shape">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="8dp"
+                            android:src="@drawable/syrup"/>
+
+                        <TextView
+                            android:id="@+id/syrupText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center|left"
+                            android:inputType="textEmailAddress"
+                            android:text="Syrup"
+                            android:textColor="@color/colorTitleColor"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/drag_injectionLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@drawable/edit_text_bg_shape">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:src="@drawable/injection"/>
+
+                        <TextView
+                            android:id="@+id/injectionText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center|left"
+                            android:inputType="textEmailAddress"
+                            android:text="Injection"
+                            android:textColor="@color/colorTitleColor"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/drag_suspension"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_bg_shape">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:padding="10dp"
+                            android:src="@drawable/suspension"/>
+
+                        <TextView
+                            android:id="@+id/suspensionText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:backgroundTint="@android:color/transparent"
+                            android:gravity="center|left"
+                            android:inputType="textEmailAddress"
+                            android:text="Suspension"
+                            android:textColor="@color/colorTitleColor"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/durationTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Duration Ex: 5"
+                        android:paddingLeft="12dp"
+                        android:inputType="number"
+                        android:textColor="@color/colorTitleColor"/>
+
+                    <TextView
+                        android:id="@+id/dragDayTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_bg_shape"
+                        android:gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:text="Day"
+                        android:textColor="@color/colorTitleColor"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/dragMonthTv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:text="Month"
+                        android:textColor="@color/colorTitleColor"
+                        android:textSize="18sp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/edit_text_bg_shape"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/medicineNameATV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@android:color/transparent"
+                            android:hint="Name of Medicine"
+                            android:inputType="text"
+                            android:paddingLeft="12dp"
+                            android:textColor="@color/colorTitleColor" />
+
+                        <ImageView
+                            android:layout_width="46dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="right"
+                            android:background="@drawable/icon_bg_shape"
+                            android:padding="10dp"
+                            android:src="@drawable/angle_arrow_down"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:layout_weight="7"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/summeryTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toStartOf="@+id/plusIV"
+                        android:backgroundTint="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="2"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="6dp"
+                        android:hint="Summery of doses"
+                        android:textDirection="firstStrongLtr"
+                        android:textColor="@color/colorTitleColor"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/plusIV"
+                        android:layout_width="46dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:background="@drawable/icon_bg_shape"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_add_dark_gray_24dp"/>
+                    <!--</LinearLayout>-->
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/edit_text_bg_shape"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/button_bg_sgape"
+                        android:gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:text="Prescription Update"
+                        android:textColor="@color/colorTitleColor"
+                        android:textSize="14sp"/>
+
+                    <ListView
+                        android:id="@+id/my_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scrollbars="vertical"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/completeBTN"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_bg_sgape"
+            android:gravity="center"
+            android:text="Complete"
+            android:textColor="@color/colorTitleColor"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</LinearLayout>
